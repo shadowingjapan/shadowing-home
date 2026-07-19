@@ -1,0 +1,510 @@
+{
+ "meta": {
+  "PLAe1W4gs5K4g": {
+   "group": "basic",
+   "order": 0,
+   "sub": "여행 · 회화",
+   "lv": "초급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": true
+  },
+  "PLU8fPcKYfXvccl7WD0wYLLboXeiSWtd_a": {
+   "group": "basic",
+   "order": 1,
+   "sub": "여행 · 회화",
+   "lv": "초중급",
+   "st": "완결·추가편 예정",
+   "pdf": true,
+   "rec": true,
+   "new": false
+  },
+  "PLU8fPcKYfXvfz_2TjnUfuKTGJQ967iOuC": {
+   "group": "basic",
+   "order": 2,
+   "sub": "여행 · 회화",
+   "lv": "초급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": true
+  },
+  "PLU8fPcKYfXvdQql2Z5Y_-uUD7plIvjskh": {
+   "group": "basic",
+   "order": 3,
+   "sub": "여행 · 회화",
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvfCpGhGgzKkEVyG6FWUVESs": {
+   "group": "basic",
+   "order": 4,
+   "sub": "여행 · 회화",
+   "lv": "초중급",
+   "st": "연재 준비중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvfdKnW1MRC3_7OSv7ZMd4De": {
+   "group": "basic",
+   "order": 5,
+   "sub": "기본 단어",
+   "lv": "초중급",
+   "st": "계속 추가중",
+   "pdf": true,
+   "rec": true,
+   "new": false
+  },
+  "PLU8fPcKYfXvc63x3HPcfWZ1-Cn3KJnK1s": {
+   "group": "basic",
+   "order": 6,
+   "sub": "기본 단어",
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvcm_PRaBR-HMDS-omif2MUz": {
+   "group": "basic",
+   "order": 7,
+   "sub": "기본 단어",
+   "lv": "초중급",
+   "st": "계속 추가중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvd5IpIoD5Bfy07HRqVHeOo9": {
+   "group": "basic",
+   "order": 8,
+   "sub": "기본 단어",
+   "lv": "초급",
+   "st": "완결",
+   "pdf": false,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvdtUFwCAoajqHVYRw0KJpIE": {
+   "group": "basic",
+   "order": 9,
+   "sub": "문법 · 활용",
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": true,
+   "new": false
+  },
+  "PLU8fPcKYfXvf4yluS3Es1zO3uIb3BV-Ct": {
+   "group": "basic",
+   "order": 10,
+   "sub": "문법 · 활용",
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvddjNGhdaY9FtD5FE4SfU2Q": {
+   "group": "basic",
+   "order": 11,
+   "sub": "문장 연습",
+   "lv": "중고급",
+   "st": "완결 (N5~N1)",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvdbWdtsRFilX_R4h--b296m": {
+   "group": "inter",
+   "order": 0,
+   "sub": "한자",
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": true,
+   "new": false
+  },
+  "PLU8fPcKYfXvcA7f2EAbh--ABnstImBw9R": {
+   "group": "inter",
+   "order": 1,
+   "sub": "한자",
+   "lv": "고급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvd1aOTSSukHVh8RYPo_7FEn": {
+   "group": "inter",
+   "order": 2,
+   "sub": "한자",
+   "lv": "중급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvfLDsGqnrtQYoQSLAWZLYnC": {
+   "group": "inter",
+   "order": 3,
+   "sub": "한자",
+   "lv": "중급",
+   "st": "완결",
+   "pdf": false,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvcPPeJD3aeWsgkwaEpPUeC4": {
+   "group": "inter",
+   "order": 4,
+   "sub": "표현 · 관용어",
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvdtK0AfxDA3grx_v6E_4EQ2": {
+   "group": "inter",
+   "order": 5,
+   "sub": "표현 · 관용어",
+   "lv": "중급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvcOOwL8ECaUEa6FYpQnGBeX": {
+   "group": "inter",
+   "order": 6,
+   "sub": "표현 · 관용어",
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXve2amYnu-c0JaC73vAYCnoj": {
+   "group": "inter",
+   "order": 7,
+   "sub": "표현 · 관용어",
+   "lv": "중급",
+   "st": "17편에서 중단",
+   "pdf": false,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvcI6HUuDmbDaLZIr3qjUBi1": {
+   "group": "inter",
+   "order": 8,
+   "sub": "실전 어휘",
+   "lv": "중급",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvdgqC4E12iD_X33DoZIpfwj": {
+   "group": "inter",
+   "order": 9,
+   "sub": "실전 어휘",
+   "lv": "고급",
+   "st": "완결",
+   "pdf": false,
+   "rec": false,
+   "new": false
+  },
+  "PLU8fPcKYfXvepWbJhmCtrMUgrPkzRol7c": {
+   "group": "jlpt",
+   "order": 0,
+   "lv": "초급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": true,
+   "level": "N5",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvcovQCpfIxMNcqEYtjvtBHv": {
+   "group": "jlpt",
+   "order": 1,
+   "lv": "초급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N5",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvfufnP6iuE7erQSqYS-5S7o": {
+   "group": "jlpt",
+   "order": 2,
+   "lv": "초급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N5",
+   "type": "grammar"
+  },
+  "PLU8fPcKYfXvf0BASpxDTt6cALKLkI5OTC": {
+   "group": "jlpt",
+   "order": 3,
+   "lv": "초급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N5",
+   "type": "kanji"
+  },
+  "PLU8fPcKYfXvdhK23FSeRC6Dy98x_WvtH8": {
+   "group": "jlpt",
+   "order": 4,
+   "lv": "초급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N5",
+   "type": "sentence"
+  },
+  "PLU8fPcKYfXvdBiLBD5eOjqQF9rzK3Mq9F": {
+   "group": "jlpt",
+   "order": 5,
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N4",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvdLevdJXHi5DkGPI8_92fLB": {
+   "group": "jlpt",
+   "order": 6,
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N4",
+   "type": "grammar"
+  },
+  "PLU8fPcKYfXvf5-wDEFFkP8o0vFjh4LHoM": {
+   "group": "jlpt",
+   "order": 7,
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N4",
+   "type": "kanji"
+  },
+  "PLU8fPcKYfXvdcSIG0kkIuNh2cdW3FMw9g": {
+   "group": "jlpt",
+   "order": 8,
+   "lv": "초중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N4",
+   "type": "sentence"
+  },
+  "PLU8fPcKYfXvds1Mfl-rGZzRnctWcqzoJV": {
+   "group": "jlpt",
+   "order": 9,
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N3",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXve2_SoAAQAzXzuSs5CipLnB": {
+   "group": "jlpt",
+   "order": 10,
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N3",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvfbRke0kdiK2aCi9LZO0jpW": {
+   "group": "jlpt",
+   "order": 11,
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N3",
+   "type": "grammar"
+  },
+  "PLU8fPcKYfXvfpqZRYgU7g-vUA7pzWk4Lz": {
+   "group": "jlpt",
+   "order": 12,
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N3",
+   "type": "kanji"
+  },
+  "PLU8fPcKYfXvdr1y5UiPaquKjBOBQXo3X0": {
+   "group": "jlpt",
+   "order": 13,
+   "lv": "중급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N3",
+   "type": "sentence"
+  },
+  "PLU8fPcKYfXvcnS0sWCng9GfzoDTybAgzA": {
+   "group": "jlpt",
+   "order": 14,
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N2",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXveuNamxeTZPRehhFDtsKr37": {
+   "group": "jlpt",
+   "order": 15,
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N2",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvdlfPgKZxgB4h-gNwc8nnDx": {
+   "group": "jlpt",
+   "order": 16,
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N2",
+   "type": "grammar"
+  },
+  "PLU8fPcKYfXveMtBK3TozAe2YiEVOufUfu": {
+   "group": "jlpt",
+   "order": 17,
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N2",
+   "type": "kanji"
+  },
+  "PLU8fPcKYfXvcMDCdj1psjRrdZGqjP2IYp": {
+   "group": "jlpt",
+   "order": 18,
+   "lv": "중고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N2",
+   "type": "sentence"
+  },
+  "PLU8fPcKYfXvez8MWVhZHcimRi5U5eOqzy": {
+   "group": "jlpt",
+   "order": 19,
+   "lv": "고급",
+   "st": "연재중",
+   "pdf": false,
+   "rec": false,
+   "new": true,
+   "level": "N1",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvehnFgeCw8Xw1rk_be_Wa9Y": {
+   "group": "jlpt",
+   "order": 20,
+   "lv": "고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N1",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvc4PZabOY3tacvUIgpKWUIM": {
+   "group": "jlpt",
+   "order": 21,
+   "lv": "고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N1",
+   "type": "vocab"
+  },
+  "PLU8fPcKYfXvdOpmA4K9DkOGcOJK01WZDR": {
+   "group": "jlpt",
+   "order": 22,
+   "lv": "고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N1",
+   "type": "grammar"
+  },
+  "PLU8fPcKYfXvdAqj3bdrVe3bPt07K1Xexk": {
+   "group": "jlpt",
+   "order": 23,
+   "lv": "고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N1",
+   "type": "kanji"
+  },
+  "PLU8fPcKYfXvdLg5vd6QxcKewjwl4EMrJJ": {
+   "group": "jlpt",
+   "order": 24,
+   "lv": "고급",
+   "st": "완결",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "N1",
+   "type": "sentence"
+  },
+  "PLU8fPcKYfXvfGEBgI9J100485GuHetCdG": {
+   "group": "jlpt",
+   "order": 25,
+   "lv": "전체",
+   "st": "연재중",
+   "pdf": true,
+   "rec": false,
+   "new": false,
+   "level": "ALL",
+   "type": "kanji"
+  }
+ }
+}
