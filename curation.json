@@ -434,7 +434,7 @@
    "order": 19,
    "lv": "고급",
    "st": "연재중",
-   "pdf": false,
+   "pdf": true,
    "rec": false,
    "new": true,
    "level": "N1",

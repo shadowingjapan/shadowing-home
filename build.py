@@ -7,10 +7,11 @@ YouTube Data API v3로 채널의 재생목록/영상 데이터를 수집해 inde
   YT_API_KEY : YouTube Data API v3 키 (GitHub Actions에서는 Secrets로 주입)
 """
 import json, os, re, sys, urllib.request, urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 CHANNEL_ID = "UCjljs0dZ3Z2tkwBWOfCwjvQ"
 UPLOADS_PL = "UUjljs0dZ3Z2tkwBWOfCwjvQ"   # 채널 전체 업로드 재생목록
+KST = timezone(timedelta(hours=9))
 API = "https://www.googleapis.com/youtube/v3/"
 KEY = os.environ.get("YT_API_KEY", "").strip()
 
@@ -94,14 +95,26 @@ def collect():
                        "pub": it["contentDetails"].get("videoPublishedAt") or sn["publishedAt"]}
     print(f"   영상 {len(videos)}개")
 
-    print("3/4 조회수 수집...")
+    print("3/4 조회수·프리미어 정보 수집...")
+    premieres = {}
+    now = datetime.now(timezone.utc)
     ids = list(videos.keys())
     for i in range(0, len(ids), 50):
-        batch = api("videos", part="statistics", id=",".join(ids[i:i + 50]))
+        batch = api("videos", part="statistics,liveStreamingDetails",
+                    id=",".join(ids[i:i + 50]))
         for v in batch.get("items", []):
             vc = v.get("statistics", {}).get("viewCount")
             if vc is not None:
                 videos[v["id"]]["views"] = int(vc)
+            live = v.get("liveStreamingDetails", {})
+            sched = live.get("scheduledStartTime")
+            if sched and not live.get("actualEndTime"):
+                dt = datetime.fromisoformat(sched.replace("Z", "+00:00"))
+                if dt > now:  # 앞으로 예정된 프리미어만
+                    k = dt.astimezone(KST)
+                    premieres[v["id"]] = f"{k.month}/{k.day} {k:%H:%M}"
+    if premieres:
+        print(f"   프리미어 예정 {len(premieres)}개")
 
     print("4/4 재생목록별 영상 순서 수집...")
     pl_vids = {}
@@ -116,6 +129,7 @@ def collect():
         except Exception as e:
             print(f"   경고: {p['title']} 수집 실패 — {e}")
             pl_vids[p["id"]] = []
+
     print("추가: 회원 전용 영상 목록 수집...")
     members = []
     try:
@@ -125,7 +139,7 @@ def collect():
         print(f"   회원 전용 {len(members)}개")
     except Exception as e:
         print(f"   회원 전용 목록 수집 불가(건너뜀) — {e}")
-    return playlists, videos, pl_vids, subs, members
+    return playlists, videos, pl_vids, subs, members, premieres
 
 
 # ---------- 신규 재생목록 자동 분류 ----------
@@ -203,7 +217,6 @@ def build_site_data(playlists, videos, pl_vids, curation, subs=None):
 
     groups = []
     for key, title, desc in groups_def:
-        # 순서 정렬 후, 같은 소그룹(sub)끼리 인접하도록 안정 정렬
         items = [e for _, e in sorted(buckets[key], key=lambda x: x[0])]
         sub_first = {}
         for i, e in enumerate(items):
@@ -225,9 +238,10 @@ def build_site_data(playlists, videos, pl_vids, curation, subs=None):
 
 def main():
     curation = json.load(open("curation.json", encoding="utf-8"))
-    playlists, videos, pl_vids, subs, members = collect()
+    playlists, videos, pl_vids, subs, members, premieres = collect()
     data = build_site_data(playlists, videos, pl_vids, curation, subs)
     data["members"] = members
+    data["premieres"] = premieres
 
     tpl = open("template.html", encoding="utf-8").read()
     html = tpl.replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False))
@@ -236,7 +250,7 @@ def main():
     json.dump(data, open("data.json", "w", encoding="utf-8"), ensure_ascii=False)
     print(f"완료: index.html 생성 — 영상 {len(data['uploads'])}편, "
           f"재생목록 {sum(len(g['items']) for g in data['groups']) + len(data['jlptFlat'])}개, "
-          f"구독자 {data['channel']['subs']}")
+          f"구독자 {data['channel']['subs']}, 프리미어 예정 {len(premieres)}개")
 
 
 if __name__ == "__main__":

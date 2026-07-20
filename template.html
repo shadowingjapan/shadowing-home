@@ -96,6 +96,8 @@ button{font-family:inherit;border:none;background:none;cursor:pointer;color:inhe
 .bdg-pdf{background:rgba(0,113,227,.1);color:var(--accent)}
 .bdg-ing{color:var(--green);border:1px dashed currentColor;background:transparent;opacity:.9}
 .bdg-mem{background:rgba(29,138,62,.1);color:var(--green);flex:none}
+.bdg-prem{background:rgba(124,58,237,.1);color:#7c3aed;flex:none}
+@media (prefers-color-scheme: dark){ .bdg-prem{color:#a78bfa} }
 
 /* ---------- Grouped list ---------- */
 .list{margin-top:20px;background:var(--card);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
@@ -295,12 +297,14 @@ function badgeHTML(it){
 }
 
 const MEMBERS = new Set(DATA.members || []);
+const PREM = DATA.premieres || {};
 function vidRow(v, pl, i, withDate){
   const meta = [v.w ? '조회수 ' + v.w : '', withDate ? v.d : ''].filter(Boolean).join(' · ');
   const mem = MEMBERS.has(v.v) ? '<span class="bdg bdg-mem" title="멤버십 회원 전용 영상입니다">회원 전용</span>' : '';
+  const prem = PREM[v.v] ? `<span class="bdg bdg-prem" title="프리미어 공개 예정">프리미어 ${esc(PREM[v.v])}</span>` : '';
   return `<a class="vid" href="${watch(v.v, pl)}" target="_blank" rel="noopener">
     ${i != null ? `<span class="no">${i+1}</span>` : ''}
-    <span class="vt">${esc(v.t)}</span>${mem}
+    <span class="vt">${esc(v.t)}</span>${prem}${mem}
     <span class="vm">${esc(meta)}</span>${GO}</a>`;
 }
 
